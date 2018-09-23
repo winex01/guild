@@ -143,7 +143,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         
-        <li class="treeview ">
+        <li class="treeview {{ active('dashboard') }}">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Home</span>
             <span class="pull-right-container">
@@ -151,9 +151,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Blank Page</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Warning</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+            <li class="{{ active('dashboard') }}"><a href="#"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> <span>Warning</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> <span>Information</span></a></li>
           </ul>
         </li>
       </ul>
