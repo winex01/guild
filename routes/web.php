@@ -1,7 +1,7 @@
 <?php
 
 #test
-Route::get('/test', function () {
+Route::get('/test2', function () {
     return view('test');
 });
 
