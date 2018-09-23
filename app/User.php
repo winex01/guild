@@ -29,6 +29,6 @@ class User extends Authenticatable
 
     public function template()
     {
-        return $this->hasOne(Template::class);
+        return $this->belongsTo(Template::class);
     }
 }
