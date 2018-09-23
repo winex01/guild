@@ -14,10 +14,10 @@ class TemplatesTableSeeder extends Seeder
     {
         //
         DB::table('templates')->insert([
+            'id' => 1,
             'description' => 'administrator',
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-            'user_id' => 1
+            'updated_at' => Carbon::now()
         ]);
     }
 }
