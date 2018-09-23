@@ -16,7 +16,8 @@ class TemplatesTableSeeder extends Seeder
         DB::table('templates')->insert([
             'description' => 'administrator',
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
+            'updated_at' => Carbon::now(),
+            'user_id' => 1
         ]);
     }
 }
