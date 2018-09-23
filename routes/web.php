@@ -12,4 +12,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+#home
+Route::namespace('home')->group(function () {
+	Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
